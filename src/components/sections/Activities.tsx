@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { DraggableCard } from "@/components/ui/draggable-card";
 import { EncryptedText } from "@/components/ui/encrypted-text";
-import { Compare } from "@/components/ui/compare";
+
 import { CheckCircle2, AlertTriangle, ShieldCheck } from "lucide-react";
 
 export function Activities() {
@@ -61,10 +61,7 @@ export function Activities() {
             </p>
             <div className="h-64 rounded-2xl overflow-hidden border-2 border-gray-200 shadow-inner relative">
               {/* Using colored divs as placeholder for images since we don't have local images */}
-              <Compare
-                firstImage="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80"
-                secondImage="https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?w=800&q=80"
-              />
+              <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80" alt="Safe" className="w-full h-full object-cover opacity-50" />
               <div className="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10 shadow-lg">Fake App</div>
               <div className="absolute top-4 right-4 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10 shadow-lg">Real App</div>
             </div>
